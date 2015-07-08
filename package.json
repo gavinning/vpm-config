@@ -1,0 +1,27 @@
+{
+  "name": "vpm-config",
+  "description": "vpm config",
+  "main": "config.js",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "vpm -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gavinning/vpm-config.git"
+  },
+  "keywords": [
+    "vpm",
+    "vpm-config"
+  ],
+  "author": "gavinning",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/gavinning/vpm-config/issues"
+  },
+  "homepage": "https://github.com/gavinning/vpm-config",
+  "dependencies": {
+    "aimee-extend": "*",
+    "aimee-is": "*"
+  }
+}

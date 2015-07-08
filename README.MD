@@ -1,11 +1,10 @@
-#VPM-CLI
+#VPM-CONFIG
 
 
 安装  
 
 ```
 npm install vpm-config --save
-
 ```
 
 使用  

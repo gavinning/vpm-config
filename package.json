@@ -2,7 +2,7 @@
   "name": "vpm-config",
   "description": "vpm config",
   "main": "config.js",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "test": "vpm -v"
   },

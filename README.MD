@@ -16,7 +16,7 @@ var config = require('vpm-config');
 config.set('config', path.join(__dirname, 'config.js'));
 
 
-// config.set 单项配置，覆盖配置，设置配置文件路径
+// config.set 单项配置，覆盖配置
 config.set('dir.install', 'packages');
 
 // config.merge 多项配置，合并配置

@@ -1,7 +1,29 @@
+/**
+ * VPM-Config
+ * @author gavinning
+ * @homepage http://github.com/gavinning/vpm-config
+ */
+
 var is = require('aimee-is');
 var extend = require('aimee-extend');
 var __config = {};
 
+
+/**
+ * 设置数据模型
+ * @param   {String || Object} obj 模块id或数据模型对象
+ */
+exports.init = function(obj){
+    // 当做模块路径处理
+    if(is.string(obj)){
+        __config = require(obj)
+    }
+
+    // 当做配置文件处理
+    if(is.plainObject(obj)){
+        __config = obj;
+    }
+}
 
 /**
  * 单项配置设置，覆盖模式，推荐只用于单项配置
@@ -30,8 +52,6 @@ exports.set = function(key, value){
     try{
         eval('__config.' + key + ' = value')
     }catch(e){}
-
-    return this;
 }
 
 /**
@@ -52,8 +72,8 @@ exports.get = function(key){
 
 /**
  * 多项配置设置，合并模式，推荐使用多项配置
- * @param   {[String]} key [description]
- * @param   {type}     obj [description]
+ * @param   {[String]} key 合并的属性节点
+ * @param   {Object}   obj 合并的对象map
  * @example config.merge({dir: {install: 'packages'}});
  * @example config.merge('dir', {install: 'packages'});
  * @example config.merge('dir.install', 'packages');

@@ -10,12 +10,12 @@ var jsonFormat = require('json-format');
 
 class Config {
 
-    constructor() {
-        this.__config = {};
+    constructor(target) {
+        this.init(target)
     }
 
     /**
-     * 设置数据模型
+     * 设置数据模型 TODO 将会在v4.+中废弃该方法
      * @param   {String || Object} target 模块id或数据模型对象
      */
     init(target) {

@@ -1,5 +1,5 @@
 var Config = require('../config')
-var config = new Config
+var config = new Config({a:1})
 
 console.log(1, config)
 

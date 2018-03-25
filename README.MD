@@ -15,7 +15,6 @@ npm i vpm-config
 
 ### Usage
 ```javascript
-// For Node
 var Config = require('vpm-config');
 var config = new Config;
 ```

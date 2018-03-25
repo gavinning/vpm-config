@@ -2,9 +2,9 @@
   "name": "vpm-config",
   "description": "vpm config",
   "main": "config.js",
-  "version": "1.1.0",
+  "version": "3.0.0",
   "scripts": {
-    "test": "vpm -v"
+    "test": "node demo/test.js"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/gavinning/vpm-config",
   "dependencies": {
-    "aimee-extend": "*",
-    "aimee-is": "*"
+    "aimee-extend": "^1.0.0",
+    "aimee-is": "^1.0.0",
+    "json-format": "^0.1.2"
   }
 }

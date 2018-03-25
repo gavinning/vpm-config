@@ -2,29 +2,18 @@
 
 为任意对象提供配置管理
 
-
-### Install
-
 ![INFO](https://nodei.co/npm/vpm-config.png?downloads=true&downloadRank=true&stars=true)  
 ![DOWNLOAD](https://nodei.co/npm-dl/vpm-config.png?height=3)  
 
-```sh
-# For Aimee
-aimee i config
-```
+
+### Install
 
 ```sh
-# For Node
 npm i vpm-config
 ```
 
 
 ### Usage
-```javascript
-// For Aimee
-var Config = require('config');
-var config = new Config;
-```
 ```javascript
 // For Node
 var Config = require('vpm-config');
@@ -194,8 +183,3 @@ options.prettyOptions = {
     size: 1             // => 1个单位
 }
 ```
-
-
-### Changelog
-**v3.00**  
-不在支持Aimeejs

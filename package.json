@@ -1,10 +1,10 @@
 {
   "name": "vpm-config",
   "description": "vpm config",
-  "main": "config.js",
-  "version": "3.0.1",
+  "main": "src/config.js",
+  "version": "4.0.0",
   "scripts": {
-    "test": "node demo/test.js"
+    "test": "node_modules/.bin/mocha test/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -21,8 +21,10 @@
   },
   "homepage": "https://github.com/gavinning/vpm-config",
   "dependencies": {
-    "aimee-extend": "^1.0.0",
-    "aimee-is": "^1.0.0",
-    "json-format": "^0.1.2"
+    "aimee-extend": "^1.0.1",
+    "aimee-is": "^1.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
   }
 }

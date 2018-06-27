@@ -45,7 +45,7 @@ config.merge('app.mods', {
     bar: 'foo'
 })
 
-config.get('app.mods)
+config.get('app.mods')
 ```
 
 > npm run test

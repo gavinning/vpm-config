@@ -2,7 +2,7 @@
   "name": "vpm-config",
   "description": "vpm config",
   "main": "src/config.js",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "scripts": {
     "test": "node_modules/.bin/mocha test/*.spec.js"
   },
